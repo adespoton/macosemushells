@@ -6,21 +6,21 @@ Modified emulators for all-in-one OS emulation.  Designed to display in doubled 
 
 All the non-Performa apps are based on Mini vMac (mostly 3.4.1 and later).
 
-A ROM image and a boot image will need to be placed in <filename.app>/Contents/mnvm_dat/ -- the folder indicates the name needed for the ROM image and the boot image.  The ROM image has to be a valid Macintosh 128K ROM image, a valid Mac Plus ROM image or a valid Macintosh II-series ROM image as indicated; the dsk file should be a Disk Copy 4.2 compatible boot disk of the indicated OS version.  After these are added correctly, the application will boot into the OS automatically when double clicked.
+A ROM image and a boot image will need to be placed in <filename.app>/Contents/mnvm_dat/ -- the folder indicates the name needed for the ROM image and the boot image.  The ROM image has to be a valid Macintosh 128K ROM image, a valid Mac Plus ROM image or a valid Macintosh II-series ROM image as indicated; the dsk file should be a Disk Copy 4.2 compatible boot disk of the indicated OS version.  After these are added and named correctly, the application will boot into the OS automatically when double clicked.  Any disk images up until the maximum allowed (I think I set it to 6 for most?) named disk1.dsk through disk#.dsk will be automatically mounted.
   
   
 <B><U>For "1992  Macintosh System 7.0.1P (P200)" through "1995 Mac OS 7.5.1 (P630CD)":</B></U>
 
 All the apps targeting Performa computers in this range are using Basilisk II.
 
-A ROM image for the Quadra 650 or compatible and a sparsebundle disk image of the OS will need to be added to <filename.app>/Contents/Resources/ or the file <filename.app>/Contents/Resources/Config will need to be modified to point to the new boot image and ROM.
+A ROM image for the Quadra 650 or compatible and a sparsebundle disk image of the OS will need to be added to <filename.app>/Contents/Resources/ or the file <filename.app>/Contents/Resources/Config will need to be modified to point to the new boot image and ROM.  Any legitimate disk image can be converted to a sparsebundle using https://github.com/adespoton/sparserbundler
  
  
 <B><U>For "1995 Mac OS 7.5.2 (Marconi) (PPC).app" through "1999-2000 Mac OS 9.0.4 (Sonata).app":</B></U>
 
 All the apps targeting non-OS X are using SheepShaver.
 
-A New World ROM image and a sparsebundle disk image (2MB image segments) will need to be added to <filename.app>/Contents/Resources/Files/MacOS.sheepvm/ -- the file <filename.app>/Contents/Resources/Files/MacOS.sheepvm/prefs contains the configuration data.
+A New World ROM image and a sparsebundle disk image will need to be added to <filename.app>/Contents/Resources/Files/MacOS.sheepvm/ -- the file <filename.app>/Contents/Resources/Files/MacOS.sheepvm/prefs contains the configuration data.  Any legitimate disk image can be converted to a sparsebundle using https://github.com/adespoton/sparserbundler
 
 
 <B><U>For "1999 Mac OS X Server 1.2v3.app" through "2007-9 Mac OS X 10.5.8 (PPC) (Leopard).app":</B></U>
